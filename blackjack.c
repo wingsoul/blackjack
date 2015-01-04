@@ -35,56 +35,28 @@ void pic(int num){
 	int po_num;
 	fl = num / 100;
 	po_num = num % 100;
+	printf("*******\n");
+	printf("*     *\n");
+	printf("*  %c  *\n", fl);
 	switch (po_num){
-	case 1:
-		printf("*******\n");
-		printf("*     *\n");
-		printf("*  %c *\n", fl);
+	case 1:		
 		printf("*  A  *\n");
-		printf("*     *\n");
-		printf("*******\n");
-		break;
-	case 2:
-	case 3:
-	case 4:
-	case 5:
-	case 6:
-	case 7:
-	case 8:
-	case 9:
-	case 10:
-		printf("*******\n");
-		printf("*     *\n");
-		printf("*  %c  *\n", fl);
-		printf("*  %d  *\n", po_num);
-		printf("*     *\n");
-		printf("*******\n");
 		break;
 	case 11:
-		printf("*******\n");
-		printf("*     *\n");
-		printf("*  %c  *\n", fl);
 		printf("*  J  *\n");
-		printf("*     *\n");
-		printf("*******\n");
 		break;
 	case 12:
-		printf("*******\n");
-		printf("*     *\n");
-		printf("*  %c  *\n", fl);
 		printf("*  Q  *\n");
-		printf("*     *\n");
-		printf("*******\n");
 		break;
 	case 13:
-		printf("*******\n");
-		printf("*     *\n");
-		printf("*  %c  *\n", fl);
 		printf("*  K  *\n");
-		printf("*     *\n");
-		printf("*******\n");
+		break;
+	default:
+		printf("*  %d  *\n", po_num);
 		break;
 	}
+	printf("*     *\n");
+	printf("*******\n");
 }
 int play(int playernum){
 	int i;
